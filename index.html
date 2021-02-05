@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <h3>U.S.A. Elections</h3>
+    </nav>
+
+    <h1>Tap Vote To Cast Your Ballot</h1>
+
+<div class="nixon">
+    <img src="nixon2.png" alt="">
+    <a href="#" onclick="togglePopup()" id="nixon" class="button1">Vote for Nixon</a>
+</div>
+
+<div class="MCG">
+    <img class="image2" src="Mcgovern2.png" alt=""><br>
+    <a href="#" onclick="togglePopup2()" id="McG" class="button2">Vote for McGovern</a>
+</div>
+
+
+<div class="popup notactive" id="Popup1">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <p>Thank You For Voting</p>
+        <img src="I voted.png" class="iVoted">
+        
+    </div>
+</div>
+
+<div class="popup notactive" id="Popup2">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup2()">&times;</div>
+        <p>Try Again</p>
+        <img src="mad face2.png" class="mad">
+        
+    </div>
+</div>
+
+
+<h5>Public Count: 1<br>
+    Time:04:27PM 2/4/2021<br>
+    Power AC<br>
+    Battery 90%
+</h5>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

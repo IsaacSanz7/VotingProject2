@@ -1,0 +1,218 @@
+html{
+    background-color: #4169E1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;   
+}
+
+
+
+.nixon{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate((-50%, -50%));
+    padding-right: 500px;
+}
+
+.MCG{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate((-50%, -50%));
+    padding-left: 500px;
+}
+
+
+nav{
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) ;
+    background: #fff;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.active .overlay{
+    display: block;
+}
+
+.active .content{
+    transition: all 1s;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+p{
+    font-size: 30px;
+    
+}
+
+.iVoted{
+    width: 200px;
+    height: 100px;
+}
+
+.mad{
+    width: 150px;
+    height: 110px;
+}
+
+h5{
+    margin-top: 540px;
+    color: white;
+}
+
+
+.button1{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+}
+.button1:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 10%;
+    background: #03a9f4;
+   z-index: -1;
+   transition: transform 0.5s;
+   transform-origin: bottom right;
+   transform: scale(0);
+
+}
+
+.button1:hover:before{
+    transition: transform 0.5s;
+   transform-origin: top left;
+   transform: scale(1);
+}
+
+.button1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 10%;
+    background: transparent;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+   z-index: -1;
+   transition: transform 0.5s;
+   transform-origin: top left;
+   transform: scale(1);
+}
+
+.button1:hover:after{
+    transition: transform 0.5s;
+   transform-origin: bottom right;
+   transform: scale(0);
+}
+
+.button2{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.button2:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 10%;
+    background: #03a9f4;
+   z-index: -1;
+   transition: transform 0.5s;
+   transform-origin: bottom right;
+   transform: scale(0);
+
+}
+
+.button2:hover:before{
+    transition: transform 0.5s;
+   transform-origin: top left;
+   transform: scale(1);
+}
+
+.button2:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 35%;
+    height: 10%;
+    background: transparent;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+   z-index: -1;
+   transition: transform 0.5s;
+   transform-origin: top left;
+   transform: scale(1);
+}
+
+.button2:hover:after{
+    transition: transform 0.5s;
+   transform-origin: bottom right;
+   transform: scale(0);
+}
+
+.image2{
+    padding-left: 50px;
+}
